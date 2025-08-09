@@ -5,8 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadset, faGlobe, faWallet } from "@fortawesome/free-solid-svg-icons";
 import { motion, Variants, easeInOut, useInView, useAnimation } from "framer-motion";
 
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
 type Card = {
-  icon: any;
+  icon: IconDefinition;
   title: string;
   description: string;
 };
