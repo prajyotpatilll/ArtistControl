@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Roboto } from "next/font/google";
+import MusicTrail from "@/components/MusicTrail";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -20,8 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} antialiased min-h-screen bg-white dark:bg-gray-950 text-black dark:text-white flex flex-col items-center`}
+        className={`${roboto.className} antialiased min-h-screen bg-gray-100 dark:bg-gray-950 text-black dark:text-white flex flex-col items-center`}
       >
+        <MusicTrail/>
         <Navbar />
         {children}
       </body>

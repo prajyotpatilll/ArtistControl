@@ -16,7 +16,9 @@ const config: Config = {
         sans: ["var(--font-public-sans)", "sans-serif"], // default
         geist: ["var(--font-geist-sans)", "sans-serif"],
         mono: ["var(--font-geist-mono)", "monospace"],
-      }
+      }, animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
     },
   },
   plugins: [],

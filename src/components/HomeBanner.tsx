@@ -74,7 +74,7 @@ export default function HomeBanner() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
             transition={{ type: "spring", stiffness: 70, damping: 15 }}
-            className="text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-center drop-shadow-lg"
+            className="text-white text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-center drop-shadow-lg"
           >
             {slides[current].heading1}
           </motion.h1>
@@ -87,7 +87,7 @@ export default function HomeBanner() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
             transition={{ type: "spring", stiffness: 70, damping: 15, delay: 0.1 }}
-            className="text-white text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-center drop-shadow-lg"
+            className="text-white text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-center drop-shadow-lg"
           >
             {slides[current].heading2}
           </motion.h1>

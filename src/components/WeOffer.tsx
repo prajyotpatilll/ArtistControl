@@ -63,7 +63,7 @@ export default function WeOffer() {
   return (
     <section
       ref={ref}
-      className="py-20 px-6 bg-gradient-to-b from-gray-100 to-white text-gray-900
+      className="py-14 sm:pt-24 px-6 bg-gradient-to-b from-gray-100 to-white text-gray-900
                  dark:from-black dark:to-gray-800 dark:text-gray-100"
     >
       <div className="max-w-7xl mx-auto text-center mb-16 px-4 sm:px-6 lg:px-8">

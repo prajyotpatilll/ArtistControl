@@ -1,9 +1,10 @@
+import FAQ from '@/components/Faq'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      faq
+      <FAQ/>
     </div>
   )
 }

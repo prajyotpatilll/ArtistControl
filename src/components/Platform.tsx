@@ -1,67 +1,73 @@
 "use client";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpotify,
   faApple,
   faSoundcloud,
   faYoutube,
   faAmazon,
-} from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
 
 const platforms = [
   {
-    name: 'Spotify',
-    url: 'https://www.spotify.com',
+    name: "Spotify",
+    url: "https://www.spotify.com",
     icon: faSpotify,
   },
   {
-    name: 'Apple Music',
-    url: 'https://music.apple.com',
+    name: "Apple Music",
+    url: "https://music.apple.com",
     icon: faApple,
   },
   {
-    name: 'SoundCloud',
-    url: 'https://soundcloud.com',
+    name: "SoundCloud",
+    url: "https://soundcloud.com",
     icon: faSoundcloud,
   },
   {
-    name: 'YouTube Music',
-    url: 'https://music.youtube.com',
+    name: "YouTube Music",
+    url: "https://music.youtube.com",
     icon: faYoutube,
   },
   {
-    name: 'Amazon Music',
-    url: 'https://music.amazon.com',
+    name: "Amazon Music",
+    url: "https://music.amazon.com",
     icon: faAmazon,
   },
 ];
 
 export default function MusicPlatforms() {
   return (
-    <div className="min-h-auto p-10 flex flex-col items-center
-                    bg-gradient-to-b dark:from-black dark:to-gray-950
-                    from-white to-gray-800">
-      <h2 className="text-3xl font-semibold
-                     text-white dark:text-black mb-8">
+    <div
+      className="sm:py-32 py-10 px-6 flex flex-col items-center
+                 bg-gradient-to-b from-gray-100 to-white
+                 dark:from-gray-900 dark:to-gray-950"
+    >
+      <h2 className="text-5xl font-extrabold text-gray-900 dark:text-white mb-10">
         Popular Music Platforms
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-4xl">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 w-full max-w-5xl">
         {platforms.map(({ name, url, icon }) => (
           <a
             key={name}
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center p-6 border border-gray-300 rounded-lg
+            className="flex flex-col items-center p-5 rounded-xl
                        text-gray-900 dark:text-gray-100
                        bg-white dark:bg-gray-800
-                       transition-shadow duration-300
-                       hover:shadow-lg"
+                       border border-gray-200 dark:border-gray-700
+                       shadow-sm hover:shadow-lg
+                       transform hover:-translate-y-1 transition-all duration-300 ease-out"
           >
-            <FontAwesomeIcon icon={icon} size="4x" className="mb-4" />
-            <span className="text-lg font-medium">{name}</span>
+            <FontAwesomeIcon
+              icon={icon}
+              size="2x"
+              className="mb-3 text-indigo-600 dark:text-indigo-400"
+            />
+            <span className="text-sm font-medium">{name}</span>
           </a>
         ))}
       </div>
